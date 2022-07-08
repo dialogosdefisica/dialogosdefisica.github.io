@@ -29,10 +29,14 @@ html {
     background-color: var(--background-primary);
 }
 * {
+    /* Colorização do elemento */
+    color: var(--content-primary);
     /* Tipografia do elemento */
     font-family: var(--content);
 }
 h1, h2, h3, h4, h5, h6 {
+    /* Colorização do elemento */
+    color: var(--content-primary);
     /* Tipografia do elemento */
     font-family: var(--title);
 }
