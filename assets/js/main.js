@@ -1,4 +1,4 @@
-// Detectar, caso exista, o elemento da navbar que representa a página atual
+// Detectar, caso exista, o elemento da nav que representa a página atual
 const navItens = {
     'Home': {
         mobile: 'mobile-nav-item__home',
