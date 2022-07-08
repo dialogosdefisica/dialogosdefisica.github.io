@@ -5,35 +5,35 @@ tailwind.config = {
             colors: {
                 /* Cores de background */
                 background: {
-                    primary: '#414D5C',/*Munsell 5PB 3/2*/
-                    secondary: '#010B13',/*Rich Black FOGRA29*/
+                    primary: '#1e293b',/*tailwind slate-800*/
+                    secondary: '#212121',/*materialize grey darken-4*/
                 },
                 /* Cores textuais */
                 content: {
-                    primary: '#eceff1',/*materialize blue-grey lighten-5*/
-                    secondary: '#90a4ae',/*materialize blue-grey lighten-2*/
-                    alert: '#ffab00',/*materialize amber accent-4*/
-                    warning: '#d50000',/*materialize red accent-4*/
-                    sucess: '#00c853',/*materialize green accent-4*/
+                    primary: '#eceff1',/*materialize blue-gray lighten-5*/
+                    secondary: '#b0bec5',/*materialize blue-grey lighten-3*/
+                    alert: '#f59e0b',/*tailwind amber-500*/
+                    warning: '#ef4444',/*tailwind red-500*/
+                    sucess: '#84cc16',/*tailwind lime-500*/
                 },
                 /* Cores de link */
                 link: {
-                    new: '#1e88e5',/*materialize blue darken-1*/
-                    old: '#7e57c2',/*materialize deep-purple lighten-1*/
+                    new: '#0284c7',/*tailwind sky-600*/
+                    old: '#9333ea',/*tailwind purple-600*/
                 },
                 /* Cores de botões */
                 button: {
                     primary: {
-                        color: '#eceff1',/*materialize blue-grey lighten-5*/
-                        hover: '#607d8b',/*materialize blue-grey*/
+                        color: '#eceff1',/*materialize blue-gray lighten-5*/
+                        hover: '#334155',/*tailwind slate-700*/
                     },
                     accept: {
-                        color: '#eceff1',/*materialize blue-grey lighten-5*/
-                        hover: '#4caf50',/*materialize green*/
+                        color: '#eceff1',/*materialize blue-gray lighten-5*/
+                        hover: '#4d7c0f',/*tailwind lime-700*/
                     },
                     refuse: {
-                        color: '#eceff1',/*materialize blue-grey lighten-5*/
-                        hover: '#f44336',/*materialize red*/
+                        color: '#eceff1',/*materialize blue-gray lighten-5*/
+                        hover: '#b91c1c',/*tailwind red-700*/
                     },
                 },
                 /* Elementos transparentes */

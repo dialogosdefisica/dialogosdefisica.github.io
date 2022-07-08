@@ -1,24 +1,24 @@
 :root {
 /* Paleta de cores da página web */
     /* Cores de background */
-    --background-primary: #414D5C;/*Munsell 5PB 3/2*/
-    --background-secondary: #010B13;/*Rich Black FOGRA29*/
+    --background-primary: #1e293b;/*tailwind slate-800*/
+    --background-secondary: #212121;/*materialize grey darken-4*/
     /* Cores textuais */
-    --content-primary: #eceff1;/*materialize blue-grey lighten-5*/
-    --content-secondary: #90a4ae;/*materialize blue-grey lighten-2*/
-    --content-alert: #ffab00;/*materialize amber accent-4*/
-    --content-warning: #d50000;/*materialize red accent-4*/
-    --content-sucess: #00c853;/*materialize green accent-4*/
+    --content-primary: #eceff1;/*materialize blue-gray lighten-5*/
+    --content-secondary: #b0bec5;/*materialize blue-grey lighten-3*/
+    --content-alert: #f59e0b;/*tailwind amber-500*/
+    --content-warning: #ef4444;/*tailwind red-500*/
+    --content-sucess: #84cc16;/*tailwind lime-500*/
     /* Cores de link */
-    --link-new: #1e88e5;/*materialize blue darken-1*/
-    --link-old: #7e57c2;/*materialize deep-purple lighten-1*/
+    --link-new: #0284c7;/*tailwind sky-600*/
+    --link-old: #9333ea;/*tailwind purple-600*/
     /* Cores de botões */
-    --button-primary-color: #eceff1;/*materialize blue-grey lighten-5*/
-    --button-primary-hover: #607d8b;/*materialize blue-grey*/
-    --button-accept-color: #eceff1;/*materialize blue-grey lighten-5*/
-    --button-accept-hover: #4caf50;/*materialize green*/
-    --button-refuse-color: #eceff1;/*materialize blue-grey lighten-5*/
-    --button-refuse-hover: #f44336;/*materialize red*/
+    --button-primary-color: #eceff1;/*materialize blue-gray lighten-5*/
+    --button-primary-hover: #334155;/*tailwind slate-700*/
+    --button-accept-color: #eceff1;/*materialize blue-gray lighten-5*/
+    --button-accept-hover: #4d7c0f;/*tailwind lime-700*/
+    --button-refuse-color: #eceff1;/*materialize blue-gray lighten-5*/
+    --button-refuse-hover: #b91c1c;/*tailwind red-700*/
 /* Tipografia da página web */
     --title: 'Quicksand', sans-serif;
     --content: 'Montserrat', sans-serif;
@@ -244,13 +244,13 @@ a:link:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
     /* Colorização do elemento */
     text-decoration: underline solid var(--link-new);
     /* Espaçamento do elemento */
-    text-decoration-thickness: 1.25rem;
+    text-decoration-thickness: 0.125rem;
 }
 a:visited:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
     /* Colorização do elemento */
     text-decoration: underline solid var(--link-old);
     /* Espaçamento do elemento */
-    text-decoration-thickness: 1.25rem;
+    text-decoration-thickness: 0.125rem;
 }
 @media screen and (min-width: 1280px) { /*'xl' breakpoint*/
     a:link:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
@@ -261,7 +261,7 @@ a:visited:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
         /* Colorização do elemento */
         text-decoration: underline solid var(--link-new);
         /* Espaçamento do elemento */
-        text-decoration-thickness: 1.25rem;
+        text-decoration-thickness: 0.125rem;
     }
     a:visited:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
         /* Colorização do elemento */
@@ -271,6 +271,6 @@ a:visited:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
         /* Colorização do elemento */
         text-decoration: underline solid var(--link-old);
         /* Espaçamento do elemento */
-        text-decoration-thickness: 1.25rem;
+        text-decoration-thickness: 0.125rem;
     }
 }
