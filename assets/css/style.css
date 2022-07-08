@@ -97,6 +97,11 @@ body {
     font-size: 1.125rem;
     line-height: 1.75rem;
 }
+.mobile-header__nav-item:hover {
+    /* Colorização do elemento */
+    color: var(--content-primary);
+    border-color: var(--content-primary);
+}
 .mobile-header__nav-item__active {
     /* Exibição do elemento */
     display: inline;
@@ -185,7 +190,7 @@ body {
         display: block;
         /* Colorização do elemento */
         color: var(--content-secondary);
-        border-color: var(--content-secondary);
+        border-color: transparent;
         /* Espaçamento do elemento */
         margin: 0.5rem;
         padding: 1.0rem;
