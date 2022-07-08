@@ -1,0 +1,228 @@
+:root {
+/* Paleta de cores da página web */
+    /* Cores de background */
+    --background-primary: #414D5C;/*Munsell 5PB 3/2*/
+    --background-secondary: #010B13;/*Rich Black FOGRA29*/
+    /* Cores textuais */
+    --content-primary: #eceff1;/*materialize blue-grey lighten-5*/
+    --content-secondary: #90a4ae;/*materialize blue-grey lighten-2*/
+    --content-alert: #ffab00;/*materialize amber accent-4*/
+    --content-warning: #d50000;/*materialize red accent-4*/
+    --content-sucess: #00c853;/*materialize green accent-4*/
+    /* Cores de link */
+    --link-new: #1e88e5;/*materialize blue darken-1*/
+    --link-old: #7e57c2;/*materialize deep-purple lighten-1*/
+    /* Cores de botões */
+    --button-primary-color: #eceff1;/*materialize blue-grey lighten-5*/
+    --button-primary-hover: #78909c;/*materialize blue-grey lighten-1*/
+    --button-accept-color: #eceff1;/*materialize blue-grey lighten-5*/
+    --button-accept-hover: #66bb6a;/*materialize green lighten-1*/
+    --button-refuse-color: #eceff1;/*materialize blue-grey lighten-5*/
+    --button-refuse-hover: #ef5350;/*materialize red lighten-1*/
+/* Tipografia da página web */
+    --title: 'Quicksand', sans-serif;
+    --content: 'Montserrat', sans-serif;
+}
+/* Estilizações padrão */
+html {
+    /* Colorização do elemento */
+    background-color: var(--background-primary);
+    /* Tipografia do elemento */
+    font-family: var(--content);
+}
+h1, h2, h3, h4, h5, h6 {
+    /* Tipografia do elemento */
+    font-family: var(--title);
+}
+
+/* Estilização do corpo da página */
+body {
+    /* Exibição do elemento */
+    display: grid;
+    grid-template-areas:
+        "mobile-header"
+        "contents-area";
+    /* Colorização do elemento */
+    background-color: var(--background-primary);
+}
+@media screen and (min-width: 1280px) { /*'xl' breakpoint*/
+    body {
+        /* Exibição do elemento */
+        grid-template-areas: 
+            "side-nav contents-area contents-area";
+    }
+}
+
+/* Estilização padrão do menu de navegação mobile */
+#mobile-header__container {
+    /* Exibição do elemento */
+    display: grid;
+    grid-template-areas:
+        "logo logo logo logo"
+        "nav-item nav-item nav-item nav-item";
+    grid-area: mobile-header;
+    /* Colorização do elemento */
+    background-color: var(--background-secondary);
+    /* Espaçamento do elemento */
+    align-items: center;
+    justify-content: center;
+    padding: 1.0rem;
+}
+#mobile-header__logo {
+    /* Exibição do elemento */
+    grid-area: logo;
+    height: 3.0rem;
+    width: 3.0rem;
+    /* Espaçamento do elemento */
+    margin: 1.0rem auto;
+}
+.mobile-header__nav-item {
+    /* Exibição do elemento */
+    display: inline;
+    grid-area: nav-item;
+    /* Colorização do elemento */
+    color: var(--content-secondary);
+    border-color: var(--content-secondary);
+    /* Espaçamento do elemento */
+    margin: 0.5rem;
+    padding: 0.25rem;
+    border-bottom-width: 2px;
+    /* Tipografia do elemento */
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.mobile-header__nav-item__active {
+    /* Exibição do elemento */
+    display: inline;
+    grid-area: nav-item;
+    /* Colorização do elemento */
+    color: var(--content-primary);
+    border-color: var(--content-primary);
+    /* Espaçamento do elemento */
+    margin: 0.5rem;
+    padding: 0.25rem;
+    border-bottom-width: 2px;
+    /* Tipografia do elemento */
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+#mobile__footer {
+    /* Colorização do elemento */
+    background-color: var(--background-secondary);
+    color: var(--content-primary);
+    margin: 1.5rem;
+    /* Espaçamento do elemento */
+    padding: 1.0rem;
+    border-radius: 0.5rem;
+    /* Tipografia do elemento */
+    font-family: var(--content);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: center;
+    
+}
+@media screen and (min-width: 1280px) { /*'xl' breakpoint*/
+    #mobile-header__container {
+        /* Exibição do elemento */
+        display: none;
+    }
+    #mobile__footer {
+        /* Exibição do elemento */
+        display: none;
+    }
+}
+
+/* Estilização padrão do menu de navegação desktop */
+#desktop-sidebar__container {
+    /* Exibição do elemento */
+    display: none;
+}
+@media screen and (min-width: 1280px) { /*'xl' breakpoint*/
+    #desktop-sidebar__container {
+        /* Exibição do elemento */
+        display: flex;
+        flex-flow: column nowrap;
+        grid-area: side-nav;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 45vw;
+        max-width: 576px;
+        /* Colorização do elemento */
+        background-color: var(--background-secondary);
+        /* Espaçamento do elemento */
+        justify-content: space-around;
+        align-items: center;
+    }
+    #desktop-sidebar__header__title {
+        /* Colorização do elemento */
+        color: var(--content-primary);
+        margin: 1.5rem 0;
+        /* Tipografia do elemento */
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+    }
+    #desktop-sidebar__nav {
+        /* Exibição do elemento */
+        display: flex;
+        flex-flow: column nowrap;
+        width: 512px;
+        /* Espaçamento do elemento */
+        justify-content: space-around;
+        align-items: flex;
+        gap: 1.5rem;
+    }
+    .desktop-sidebar__header__nav-item {
+        /* Exibição do elemento */
+        display: block;
+        /* Colorização do elemento */
+        color: var(--content-secondary);
+        border-color: var(--content-secondary);
+        /* Espaçamento do elemento */
+        margin: 0.5rem;
+        padding: 1.0rem;
+        border-left-width: 2px;
+        /* Tipografia do elemento */
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+    .desktop-sidebar__header__nav-item:hover {
+        /* Colorização do elemento */
+        color: var(--content-primary);
+        border-color: var(--content-primary);
+    }
+    .desktop-sidebar__header__nav-item__active {
+        /* Exibição do elemento */
+        display: block;
+        /* Colorização do elemento */
+        color: var(--content-primary);
+        border-color: var(--content-primary);
+        /* Espaçamento do elemento */
+        margin: 0.5rem;
+        padding: 1.0rem;
+        border-left-width: 2px;
+        /* Tipografia do elemento */
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+    #desktop-sidebar__footer {
+        /* Colorização do elemento */
+        color: var(--content-primary);
+        margin: 1.5rem;
+        /* Tipografia do elemento */
+        font-family: var(--content);
+        font-size: 0.75rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+}
+
+/* Estilização padrão do conteúdo */
+#main-content__container {
+    /* Exibição do elemento */
+    grid-area: contents-area;
+    /* Espaçamento do elemento */
+    margin: 2.5rem;
+}
