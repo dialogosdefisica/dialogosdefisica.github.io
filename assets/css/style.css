@@ -240,6 +240,9 @@ body {
         width: calc(100vw - (576px + 2.0*2.5rem));
     }
 }
+/*
+    TODO - analizar o porque os visited não estão ficando com underline diferente
+*/
 a:link:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
     /* Colorização do elemento */
     text-decoration: underline solid var(--link-new);
