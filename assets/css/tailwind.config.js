@@ -25,15 +25,15 @@ tailwind.config = {
                 button: {
                     primary: {
                         color: '#eceff1',/*materialize blue-grey lighten-5*/
-                        hover: '#78909c',/*materialize blue-grey lighten-1*/
+                        hover: '#607d8b',/*materialize blue-grey*/
                     },
                     accept: {
                         color: '#eceff1',/*materialize blue-grey lighten-5*/
-                        hover: '#66bb6a',/*materialize green lighten-1*/
+                        hover: '#4caf50',/*materialize green*/
                     },
                     refuse: {
                         color: '#eceff1',/*materialize blue-grey lighten-5*/
-                        hover: '#ef5350',/*materialize red lighten-1*/
+                        hover: '#f44336',/*materialize red*/
                     },
                 },
                 /* Elementos transparentes */

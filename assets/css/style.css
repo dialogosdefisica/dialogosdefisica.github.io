@@ -14,11 +14,11 @@
     --link-old: #7e57c2;/*materialize deep-purple lighten-1*/
     /* Cores de botões */
     --button-primary-color: #eceff1;/*materialize blue-grey lighten-5*/
-    --button-primary-hover: #78909c;/*materialize blue-grey lighten-1*/
+    --button-primary-hover: #607d8b;/*materialize blue-grey*/
     --button-accept-color: #eceff1;/*materialize blue-grey lighten-5*/
-    --button-accept-hover: #66bb6a;/*materialize green lighten-1*/
+    --button-accept-hover: #4caf50;/*materialize green*/
     --button-refuse-color: #eceff1;/*materialize blue-grey lighten-5*/
-    --button-refuse-hover: #ef5350;/*materialize red lighten-1*/
+    --button-refuse-hover: #f44336;/*materialize red*/
 /* Tipografia da página web */
     --title: 'Quicksand', sans-serif;
     --content: 'Montserrat', sans-serif;
