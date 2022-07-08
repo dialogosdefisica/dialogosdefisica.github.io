@@ -228,6 +228,7 @@ body {
 /* Estilização padrão do conteúdo */
 #main-content__container {
     /* Exibição do elemento */
+    display: block;
     grid-area: contents-area;
     width: calc(100vw - (2.0*2.5rem));
     /* Espaçamento do elemento */
