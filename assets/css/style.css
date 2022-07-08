@@ -27,6 +27,8 @@
 html {
     /* Colorização do elemento */
     background-color: var(--background-primary);
+}
+* {
     /* Tipografia do elemento */
     font-family: var(--content);
 }
