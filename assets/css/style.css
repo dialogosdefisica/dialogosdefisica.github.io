@@ -30,7 +30,7 @@ html {
 }
 * {
     /* Colorização do elemento */
-    color: var(--content-primary);
+    color: var(--content-secondary);
     /* Tipografia do elemento */
     font-family: var(--content);
 }
