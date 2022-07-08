@@ -235,6 +235,7 @@ body {
 }
 @media screen and (min-width: 1280px) { /*'xl' breakpoint*/
     #main-content__container {
+        /* Exibição do elemento */
         width: calc(100vw - (576px + 2.0*2.5rem));
     }
 }
