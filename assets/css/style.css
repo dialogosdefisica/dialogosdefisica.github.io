@@ -96,7 +96,7 @@ body {
     /* Tipografia do elemento */
     font-size: 1.125rem;
     line-height: 1.75rem;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .mobile-header__nav-item__active {
     /* Exibição do elemento */
@@ -194,13 +194,14 @@ body {
         /* Tipografia do elemento */
         font-size: 1.125rem;
         line-height: 1.75rem;
+        text-decoration: none !important;
     }
     .desktop-sidebar__header__nav-item:hover {
         /* Colorização do elemento */
         color: var(--content-primary);
         border-color: var(--content-primary);
         /* Tipografia do elemento */
-        text-decoration: none;
+        text-decoration: none !important;
     }
     .desktop-sidebar__header__nav-item__active {
         /* Exibição do elemento */
