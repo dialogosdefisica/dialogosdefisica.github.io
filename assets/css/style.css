@@ -233,3 +233,37 @@ body {
     /* Espaçamento do elemento */
     margin: 2.5rem;
 }
+a:link:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
+    /* Colorização do elemento */
+    text-decoration: underline solid var(--link-new);
+    /* Espaçamento do elemento */
+    text-decoration-thickness: 2.5px;
+}
+a:visited:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
+    /* Colorização do elemento */
+    text-decoration: underline solid var(--link-old);
+    /* Espaçamento do elemento */
+    text-decoration-thickness: 2.5px;
+}
+@media screen and (min-width: 1280px) { /*'xl' breakpoint*/
+    a:link:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
+        /* Colorização do elemento */
+        text-decoration: none;
+    }
+    a:link:hover:not(.desktop-sidebar__header__nav-item){
+        /* Colorização do elemento */
+        text-decoration: underline solid var(--link-new);
+        /* Espaçamento do elemento */
+        text-decoration-thickness: 2.5px;
+    }
+    a:visited:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
+        /* Colorização do elemento */
+        text-decoration: none;
+    }
+    a:visited:hover:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
+        /* Colorização do elemento */
+        text-decoration: underline solid var(--link-old);
+        /* Espaçamento do elemento */
+        text-decoration-thickness: 2.5px;
+    }
+}
