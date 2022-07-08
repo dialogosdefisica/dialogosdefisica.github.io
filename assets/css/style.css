@@ -229,9 +229,14 @@ body {
 #main-content__container {
     /* Exibição do elemento */
     grid-area: contents-area;
-    width: calc(100vw - (576px + 2*2.5rem));
+    width: calc(100vw - (2.0*2.5rem));
     /* Espaçamento do elemento */
     margin: 2.5rem;
+}
+@media screen and (min-width: 1280px) { /*'xl' breakpoint*/
+    #main-content__container {
+        width: calc(100vw - (576px + 2.0*2.5rem));
+    }
 }
 a:link:not(.mobile-header__nav-item):not(.desktop-sidebar__header__nav-item){
     /* Colorização do elemento */
