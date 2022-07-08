@@ -229,7 +229,7 @@ body {
 #main-content__container {
     /* Exibição do elemento */
     grid-area: contents-area;
-    width: calc(100vw - 576px);
+    width: calc(100vw - (576px + 2*2.5rem));
     /* Espaçamento do elemento */
     margin: 2.5rem;
 }
